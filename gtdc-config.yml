@@ -1,0 +1,7 @@
+failuremode:
+  greeting: "Hello CF Peeps!"
+
+funky:
+  cloud:
+    greeting: "Hello Direct Edit Let's go home already !"
+    encrypted: '{cipher}8079624b6cc92e709cc4fce7f4a9ff699badc3bfcffbfa64a7cf0f997b07c9a1'
