@@ -13,6 +13,10 @@ eureka:
 ---
 spring:
   profiles: dev
+
+messages:
+  welcome: 안녕
+
 eureka:
   client:
     service-url:
