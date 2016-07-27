@@ -2,7 +2,7 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-#    service-url:
-#      defaultZone: http://eureka-service-megazonecloud.cfapps.io/eureka
+    service-url:
+      defaultZone: http://eureka-service-megazonecloud.cfapps.io/eureka
   server:
     waitTimeInMsWhenSyncEmpty: 0
