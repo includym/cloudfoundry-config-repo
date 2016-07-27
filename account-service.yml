@@ -15,7 +15,7 @@ spring:
   profiles: dev
 
 messages:
-  welcome: 안녕
+  welcome: Welcome to ${spring.application.name}.
 
 eureka:
   client:
