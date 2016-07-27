@@ -21,9 +21,6 @@ messages:
   welcome: Welcome to ${spring.application.name}.
 
 eureka:
-  instance:
-    metadata-map:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     service-url:
       defaultZone: http://eureka-service-megazonecloud.cfapps.io/eureka/
