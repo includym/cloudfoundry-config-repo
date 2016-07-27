@@ -6,6 +6,9 @@ server:
   port: ${vcap.application.port:8080}
 
 eureka:
+  instance:
+    metadata-map:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     serviceUrl:
       defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8761}/eureka/
@@ -18,6 +21,9 @@ messages:
   welcome: Welcome to ${spring.application.name}.
 
 eureka:
+  instance:
+    metadata-map:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     service-url:
       defaultZone: http://eureka-service-megazonecloud.cfapps.io/eureka/
