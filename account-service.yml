@@ -17,7 +17,7 @@ spring:
 messages:
   welcome: Welcome to ${spring.application.name}.
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-service-megazonecloud.cfapps.io/eureka/
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://eureka-service-megazonecloud.cfapps.io/eureka/
