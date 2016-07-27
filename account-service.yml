@@ -14,6 +14,9 @@ eureka:
 spring:
   profiles: dev
 eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-service-megazonecloud.cfapps.io/eureka
   instance:
-    hostname: ${APPLICATION_DOMAIN}
-    nonSecurePort: 80
+    hostname: ${CF_INSTANCE_IP:localhost}
+    nonSecurePort: ${CF_INSTANCE_PORT:${PORT:${server.port:8888}}}
