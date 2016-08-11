@@ -7,6 +7,6 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create-drop
-    show-sql: false
+    show-sql: true
     properties:
       physical_naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
