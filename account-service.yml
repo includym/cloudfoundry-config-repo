@@ -1,8 +1,10 @@
 
-server:
-  port: ${vcap.application.port:0}
-
-eureka:
-  client:
-    service-url:
-      defaultZone: ${EUREKA_SERVICE_URI:http://127.0.0.1:8761}/eureka/
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/gtdc?autoReconnect=true&useSSL=false
+    username: gtdc
+    password: gtdc!
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
